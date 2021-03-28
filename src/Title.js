@@ -6,7 +6,7 @@ class Title extends Component {
 	render() {
 		return (
 			<div className="Title-poke">
-				<div className="Title-inner">{name}</div>
+				<div className="Title-inner">{this.props.name}</div>
 			</div>
 		)
 	}
