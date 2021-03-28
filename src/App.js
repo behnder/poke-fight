@@ -14,10 +14,8 @@ let pokemons = [
 	{ id: 133, name: "Eevee", type: "normal", base_experience: 65 },
 ]
 // let pokeProps = () => pokemons[Math.floor(Math.random() * pokemons.length)]
-let pokeProps = () => {
-	let { id, name, type, base_experience } = pokemons[
-		Math.floor(Math.random() * pokemons.length)
-	]
+let pokeProps = rand => {
+	let { id, name, type, base_experience } = pokemons[rand]
 	const PokeUrl =
 		"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 	// let PokeSrc = `${PokeUrl}${id}.png`
@@ -42,8 +40,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				HOLA
-				{pokeProps()}
-				{pokeProps()}
+				{pokeProps(Math.floor(Math.random() * pokemons.length))}
+				{pokeProps(Math.floor(Math.random() * pokemons.length))}
 				{/* <Card
 					name={name}
 					src={PokeSrc}
