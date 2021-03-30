@@ -1,3 +1,8 @@
-.Pokeimg-poke{
-display: flex;
+.Pokeimg-poke {
+	display: flex;
+
+	transition: all 0.3s;
+}
+.Pokeimg-poke:hover {
+	transform: scale(1.35);
 }

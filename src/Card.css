@@ -1,11 +1,10 @@
 .Card-poke {
-	width: 200px;
-	height: 300px;
-	border: 1px solid blue;
-	background: yellowgreen;
+	background: #dfbca6;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border-radius: 10px;
+	border-radius: 4px;
+	padding: 1rem;
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
 }

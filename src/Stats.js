@@ -5,7 +5,7 @@ import "./Stats.css"
 class Stats extends Component {
 	render() {
 		return (
-			<div>
+			<div className="Stats-poke">
 				<div>{this.props.type}</div>
 				<div>{this.props.base_experience}</div>
 			</div>
